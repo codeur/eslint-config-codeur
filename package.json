@@ -1,6 +1,6 @@
 {
   "name": "@codeur/eslint-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ESLint common config",
   "main": "index.js",
   "dependencies": {
@@ -8,6 +8,7 @@
     "@babel/eslint-parser": "^7.12.1",
     "eslint-config-prettier": "^7.2.0",
     "eslint-config-standard": "^16.0.2",
+    "eslint-import-resolver-alias": "^1.1.2",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier-vue": "^2.1.1",
