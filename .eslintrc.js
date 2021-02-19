@@ -2,13 +2,13 @@ module.exports = {
   parser: '@babel/eslint-parser',
   parserOptions: {
     ecmaFeatures: {
-      modules: true
-    }
+      modules: true,
+    },
   },
   env: {
     browser: true,
     jquery: true,
-    node: true
+    node: true,
   },
   extends: [
     'eslint:recommended',
@@ -17,7 +17,7 @@ module.exports = {
     //  Vue
     'plugin:vue/recommended',
     'plugin:prettier-vue/recommended',
-    'prettier/vue'
+    'prettier/vue',
   ],
   settings: {
     'prettier-vue': {
@@ -58,10 +58,10 @@ module.exports = {
           module: { lang: 'js' },
 
           // Ignore `<comments>` block (omit it or set it to `false` to ignore the block)
-          comments: false
+          comments: false,
 
           // Other custom blocks that are not listed here will be ignored
-        }
+        },
       },
 
       // Use prettierrc for prettier options or not (default: `true`)
@@ -75,12 +75,15 @@ module.exports = {
         ignorePath: '.testignore',
 
         // Process the files in `node_modules` or not (default: `false`)
-        withNodeModules: false
-      }
-    }
+        withNodeModules: false,
+      },
+    },
   },
 
   rules: {
+    'import/no-unresolved': 'off',
+    'import/extensions': 'off',
+
     'prefer-arrow-callback': 'error',
     'prefer-rest-params': 'error',
     'prefer-spread': 'error',
@@ -95,15 +98,15 @@ module.exports = {
       {
         html: { normal: 'never', void: 'always' },
         svg: 'always',
-        math: 'always'
-      }
+        math: 'always',
+      },
     ],
     'vue/component-name-in-template-casing': [
       'error',
       'PascalCase',
       {
-        ignores: ['b-*']
-      }
+        ignores: ['b-*'],
+      },
     ],
     'prettier-vue/prettier': [
       'error',
@@ -115,8 +118,14 @@ module.exports = {
         semi: false,
         trailingComma: 'none',
         arrowParens: 'avoid',
-        htmlWhitespaceSensitivity: 'ignore'
-      }
-    ]
-  }
+        htmlWhitespaceSensitivity: 'ignore',
+      },
+    ],
+  },
+  overrides: [
+    {
+      files: ['*.vue'],
+      parser: 'vue-eslint-parser',
+    },
+  ],
 }
