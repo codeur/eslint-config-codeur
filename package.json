@@ -1,6 +1,6 @@
 {
   "name": "@codeur/eslint-config",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "ESLint common config",
   "main": "index.js",
   "dependencies": {
@@ -20,7 +20,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier-vue": "^2.1.1",
     "eslint-plugin-promise": "^4.3.1",
-    "eslint-plugin-vue": "^7.6.0",
+    "eslint-plugin-vue": "^8.5.0",
     "prettier": "^2.2.1"
   },
   "devDependencies": {
