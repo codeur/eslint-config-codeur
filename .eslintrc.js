@@ -11,6 +11,7 @@ module.exports = {
     browser: true,
     jquery: true,
     node: true,
+    'vue/setup-compiler-macros': true
   },
 
   extends: [
