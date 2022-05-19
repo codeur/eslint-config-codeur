@@ -1,6 +1,6 @@
 {
   "name": "@codeur/eslint-config",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "ESLint common config",
   "main": "index.js",
   "dependencies": {
@@ -18,9 +18,9 @@
     "eslint-import-resolver-alias": "^1.1.2",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier-vue": "^2.1.1",
+    "eslint-plugin-prettier-vue": "^3.1.0",
     "eslint-plugin-promise": "^4.3.1",
-    "eslint-plugin-vue": "^8.5.0",
+    "eslint-plugin-vue": "^9.0.1",
     "prettier": "^2.2.1"
   },
   "devDependencies": {
