@@ -86,6 +86,8 @@ module.exports = {
         ignores: ['b-*'],
       },
     ],
+    'vue/multi-word-component-names': 'off',
+    'vue/no-v-html': 'off',
     'prettier-vue/prettier': [
       'error',
       {
